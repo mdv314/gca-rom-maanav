@@ -50,4 +50,3 @@ def set_path(HyperParams):
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path, exist_ok=False)
-

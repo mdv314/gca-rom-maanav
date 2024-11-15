@@ -34,6 +34,7 @@ def tensor_scaling(tensor, scaling_type, scaler_name):
         scaled_data = torch.unsqueeze(torch.tensor(scaler_s.transform(temp)), 0).permute(1, 2, 0)
         scale = [scaler_f, scaler_s]
     elif scaling_type==4:
+        # this is what diffusion runs
         # print("SAMPLE-FEATURE SCALING")
         scaler_s = scaling_fun_1.fit(tensor)
         temp = torch.t(torch.tensor(scaler_s.transform(tensor)))

@@ -43,6 +43,11 @@ def graphs_dataset(dataset, HyperParams, param_sample=None):
         var = torch.stack((dataset.VX, dataset.VY), dim=2)
 
     # PROCESSING DATASET
+    # print("This is the num of nodes part")
+    # print(var[0])
+    # print("This is the num of graphs part")
+    # print(var[1])
+    print(dataset.U.shape)
     num_nodes = var.shape[0]
     num_graphs = var.shape[1]
 

@@ -155,4 +155,15 @@ def problem(argument):
             n_param = 3
             dim_pde = 2
             n_comp = 1
+
+        case 15:
+            problem_name = "heat"
+            variable = 'U'
+            mu1 = np.linspace(0.01, 1.0, 10) 
+            mu2 = np.linspace(0., 2., 10)
+            mu_space = [mu1, mu2]
+            n_param = 2
+            dim_pde = 1  
+            n_comp = 1   
+
     return problem_name, variable, mu_space, n_param, dim_pde, n_comp

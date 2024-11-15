@@ -57,6 +57,8 @@ def hyperparameters_selection(name, var, n, comp):
             preset = [3, 2, 2, 2, 1, 3, 3, 1]
         elif name == "square_adv":
             preset = [3, 2, 2, 2, 1, 3, 3, 1]
+        elif name == "heat":
+            preset = [3, 2, 2, 2, 1, 3, 3, 1]
         return preset
 
 
